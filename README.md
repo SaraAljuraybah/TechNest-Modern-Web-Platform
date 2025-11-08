@@ -78,8 +78,7 @@ This project was fully coded and designed by **Sara Aljreba**, covering both fro
 
 ---
 
-
-##👩‍💻 About the Developer
+## About the Developer👩‍💻
 
 Sara Aljuraybah
 Information Technology Student at King Saud University (KSU)
