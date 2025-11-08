@@ -79,7 +79,7 @@ This project was fully coded and designed by **Sara Aljreba**, covering both fro
 
 
 
-👩‍💻 About the Developer
+##👩‍💻 About the Developer
 
 Sara Aljuraybah
 Information Technology Student at King Saud University (KSU)
@@ -95,7 +95,7 @@ LinkedIn: linkedin.com/in/sara-aljuraybah-aa746227a
 
 Email: Saraaljrebah1@gmail.com
 
-🏁 Conclusion
+##🏁 Conclusion
 
 This project demonstrates Sara’s ability to design, develop, and deploy secure, user-friendly full-stack web applications.
 It reflects strong foundations in both frontend design and backend logic, making it a great showcase piece for future opportunities in web development.
