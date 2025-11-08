@@ -10,15 +10,6 @@ TechNest delivers a sleek, modern, and secure experience for users with account 
 
 ---
 
----
-
-## 🖼️ Preview
-![TechNest Preview](preview.png)
-
-> *A modern and minimal glowing interface with full authentication features.*
-
----
-
 ## 🚀 Features
 ✅ Modern responsive design using HTML, CSS & JavaScript  
 ✅ Secure **Signup & Login** functionality with PHP & MySQL  
