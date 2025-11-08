@@ -77,3 +77,27 @@ TechNest/
 │ └── technest_db.sql # Database export file
 │
 └── README.md
+
+👩‍💻 About the Developer
+
+Sara Aljuraybah
+Information Technology Student at King Saud University (KSU)
+💻 Passionate about Web Development, UI/UX Design, and Full-Stack Engineering
+🎯 Building a solid portfolio combining creativity and functionality.
+
+📫 Connect with me:
+
+GitHub: [github.com/SaraAljreba](https://github.com/SaraAljuraybah)
+
+LinkedIn: linkedin.com/in/sara-aljuraybah-aa746227a
+ 
+
+Email: Saraaljrebah1@gmail.com
+
+🏁 Conclusion
+
+This project demonstrates Sara’s ability to design, develop, and deploy secure, user-friendly full-stack web applications.
+It reflects strong foundations in both frontend design and backend logic, making it a great showcase piece for future opportunities in web development.
+
+⭐ If you like this project, don’t forget to star it on GitHub!
+Thank you for visiting TechNest 💙
