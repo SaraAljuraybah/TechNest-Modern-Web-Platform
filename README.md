@@ -5,6 +5,13 @@ TechNest delivers a sleek, modern, and secure experience for users with account 
 
 ---
 
+## 🎥 Demo Video  
+[▶️ Watch full demo](https://drive.google.com/file/d/134MzcOBZip_WV8GQ255LXTmtFEGkg4wl/view?usp=share_link)
+
+---
+
+---
+
 ## 🖼️ Preview
 ![TechNest Preview](preview.png)
 
@@ -75,11 +82,6 @@ This project was fully coded and designed by **Sara Aljreba**, covering both fro
 | **database/** | Database export and schema |
 | └── `technest_db.sql` | MySQL database export file |
 | **README.md** | Project documentation file |
-
----
-
-## 🎥 Demo Video  
-[▶️ Watch full demo](https://drive.google.com/file/d/134MzcOBZip_WV8GQ255LXTmtFEGkg4wl/view?usp=share_link)
 
 ---
 
