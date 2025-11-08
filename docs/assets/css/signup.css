@@ -1,0 +1,113 @@
+/* General page style */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Signup box */
+.signup-container {
+  background-color: #0f0f0f;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 30px rgba(0, 191, 255, 0.3);
+  text-align: center;
+  width: 360px;
+}
+
+.signup-container h2 {
+  color: #00bfff;
+  margin-bottom: 25px;
+}
+
+/* ================= Unified Input Wrapper ================= */
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.input-wrapper input {
+  width: 100%;
+  padding: 12px 45px 12px 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: #1c1c1c;
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+  box-sizing: border-box;
+  transition: box-shadow 0.3s ease;
+}
+
+.input-wrapper input:focus {
+  box-shadow: 0 0 8px #00bfff;
+}
+
+/* Eye icons */
+#togglePassword, #toggleConfirmPassword {
+  position: absolute;
+  right: 15px;
+  cursor: pointer;
+  color: #00bfff;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.3s ease;
+}
+
+#togglePassword:hover,
+#toggleConfirmPassword:hover {
+  color: #33ccff;
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  background-color: #00bfff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #009fdd;
+}
+
+/* Error message */
+.error-message {
+  color: #ff4d4d;
+  font-size: 0.9rem;
+  margin-top: 8px;
+  text-align: center;
+  min-height: 18px;
+  transition: 0.3s ease;
+}
+
+/* Bottom text */
+p {
+  margin-top: 15px;
+  font-size: 0.9rem;
+}
+
+a {
+  color: #00bfff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

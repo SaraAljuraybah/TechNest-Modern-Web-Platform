@@ -1,0 +1,587 @@
+/* ===== General Styles ===== */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #0a0a0a; /* dark background */
+  color: #fff;
+}
+
+
+/* ===== Navbar ===== */
+header {
+  background-color: #111;
+  padding: 15px 50px;
+
+  
+}
+
+/* ==== Navbar basic style ==== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background-color: #0f0f0f;
+  color: white;
+  border-radius: 20px;
+
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 25px;
+  font-weight: 500;
+  transition: 0.3s ease;
+  position: relative;
+}
+
+.nav-links a:hover {
+  color: #00bfff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #00bfff;
+  letter-spacing: 0.5px;
+}
+
+.logo img {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 8px rgba(0, 191, 255, 0.4));
+  transition: transform 0.3s ease;
+}
+
+.logo:hover img {
+  transform: scale(1.1);
+}
+
+
+
+/* ==== Cart counter style ==== */
+.cart-link {
+  font-weight: 600;
+  position: relative;
+}
+
+.cart-count {
+  position: absolute;
+  top: -6px;
+  right: -13.5px;
+  background-color: #00bfff;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 600;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 6px rgba(0, 191, 255, 0.6);
+}
+
+
+.nav-links a:hover {
+  color: #00bfff;
+}
+
+/* ===== Hero Section ===== */
+
+.hero {
+  text-align: center;
+  padding: 120px 20px;
+  background: linear-gradient(to bottom right, #0f0f0f, #111);
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #00bfff;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  color: #ddd;
+  margin-bottom: 25px;
+}
+
+.shop-btn {
+  background-color: #00bfff;
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+/* Animation for the Hero Button */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(0, 191, 255, 0.5);
+  }
+  70% {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px 10px rgba(0, 191, 255, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(0, 191, 255, 0);
+  }
+}
+
+/* ===== Hero Text Animation ===== */
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px); /* ينزل شوي تحت */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* يرجع مكانه */
+  }
+}
+
+.hero h1, .hero p, .shop-btn {
+  opacity: 0;
+  animation: fadeUp 1s ease forwards;
+}
+
+/* تأخير بسيط لكل عنصر عشان يدخلوا بالترتيب */
+.hero h1 {
+  animation-delay: 0.2s;
+}
+.hero p {
+  animation-delay: 0.5s;
+}
+.shop-btn {
+  animation-delay: 0.8s;
+}
+
+
+.shop-btn {
+  animation: fadeUp 1s ease forwards 0.8s, pulse 2s infinite 2s;
+}
+
+.shop-btn:hover {
+  background-color: #008fcc;
+}
+
+
+
+
+
+/* ===== Featured Products Section ===== */
+
+.featured-products {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.featured-products h2 {
+  font-size: 2rem;
+  color: #00bfff;
+  margin-bottom: 50px;
+}
+
+/* 💠 توزيع الكروت مع مسافة مريحة بينهم */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px; /* ← زودي المسافة بين الكروت */
+  justify-items: center;
+  margin: 60px auto;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* 🎯 الكارد */
+.product-card {
+  background-color: #0a0a0a;
+  border-radius: 18px;
+  padding: 24px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.12);
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 320px;
+  height: 440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 🖼️ الصورة داخل الكارد */
+.product-card img {
+  width: 100%;
+  height: 210px;
+  object-fit: contain;
+  background-color: #f7f7f7; /* ← نفس اللون اللي تبينه */
+  border-radius: 20px; /* حواف ناعمة مثل قبل */
+  padding: 12px;
+  margin-bottom: 12px;
+  display: block;
+  border: 1px solid rgba(0, 0, 0, 0.05); /* ظل خفيف أنيق */
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.08); /* يعطي إحساس عمق بسيط */
+}
+
+
+/* 🧩 النصوص */
+.product-card h3 {
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.product-card p {
+  color: #aaa;
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+  min-height: 40px; /* يضمن ثبات الارتفاع */
+}
+
+/* 💰 السعر */
+.product-card .price {
+  color: #00bfff;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* 🔵 الزر */
+.product-card .add-btn {
+  background-color: #00bfff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.product-card .add-btn:hover {
+  background-color: #0099cc;
+}
+
+/* ✨ التأثير عند المرور */
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.25);
+}
+
+
+
+/* الزر */
+.product-card .add-btn {
+  background-color: #00bfff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.product-card .add-btn:hover {
+  background-color: #0099cc;
+}
+
+/* التأثير */
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.25);
+}
+
+
+/* ===== Product Cards Animation  ===== */
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* apply the animation to all cards equally */
+.product-card {
+  opacity: 0;
+  animation: fadeUp 0.8s ease forwards;
+  animation-delay: 0.3s; /* slight delay for smooth entry */
+}
+
+
+/* بدلاً من nth-child نستخدم animation-delay لكل كارد يدوي */
+.product-card:nth-of-type(1) {
+  animation-delay: 0.2s;
+}
+.product-card:nth-of-type(2) {
+  animation-delay: 0.3s;
+}
+.product-card:nth-of-type(3) {
+  animation-delay: 0.4s;
+}
+
+.product-card {
+  background-color: #111;
+  padding: 25px;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px rgba(0, 191, 255, 0.3);
+}
+
+
+
+
+/* 🛒 Sidebar Cart */
+.cart-sidebar {
+  position: fixed;
+  top: 0;
+  right: -400px;
+  width: 340px;
+  height: 100vh;
+  background-color: #0b0b0b;
+  box-shadow: -4px 0 10px rgba(0, 0, 0, 0.5);
+  color: white;
+  overflow-y: auto;
+  transition: right 0.3s ease;
+  z-index: 9999;
+  border-left: 2px solid #00bfff;
+}
+
+.cart-sidebar.active {
+  right: 0;
+}
+
+/* 🧱 Cart Header */
+.cart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px;
+  border-bottom: 1px solid #00bfff;
+}
+
+.cart-header h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #00bfff;
+}
+
+.close-cart {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* 🧾 Cart Footer */
+.cart-footer {
+  padding: 15px;
+  border-top: 1px solid #00bfff;
+  text-align: center;
+  background: #0e0e0e;
+}
+.checkout-btn {
+  width: 100%;
+  background: #00bfff;
+  color: white;
+  border: none;
+  padding: 12px 0;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  text-align: center;
+  margin-top: 10px;
+  box-shadow: 0 0 15px rgba(0, 191, 255, 0.3);
+}
+
+.checkout-btn a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+.checkout-btn:hover {
+  background: #0096c7;
+  box-shadow: 0 0 25px rgba(0, 191, 255, 0.6);
+  transform: scale(1.03);
+}
+
+
+/* 🛒 Cart Item layout (من الكود السابق) */
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #111;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.cart-item img {
+  width: 55px;
+  height: 55px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: #1a1a1a;
+  padding: 5px;
+}
+
+.cart-item .info {
+  color: #fff;
+  flex-grow: 1;
+  font-size: 14px;
+}
+
+.cart-item .info p {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.cart-item .info span {
+  color: #00bfff;
+}
+
+/* ➕➖ Quantity buttons */
+.qty-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.qty-controls button {
+  background-color: #00bfff;
+  border: none;
+  color: white;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.qty-controls button:hover {
+  background-color: #008ecc;
+}
+
+
+/* ===================== 🔍 Search Bar ===================== */
+.search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 25px auto 40px;
+  width: 60%;
+  max-width: 550px;
+  background-color: #111;
+  border-radius: 50px;
+  box-shadow: 0 0 20px rgba(0, 191, 255, 0.2);
+  overflow: hidden;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.search-bar:hover {
+  transform: scale(1.02);
+}
+
+.search-bar:focus-within {
+  box-shadow: 0 0 25px rgba(0, 191, 255, 0.5);
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 12px 20px;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+}
+
+.search-bar input::placeholder {
+  color: #888;
+  letter-spacing: 0.3px;
+}
+
+.search-bar button {
+  background-color: #00bfff;
+  border: none;
+  color: #fff;
+  padding: 12px 20px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-size: 1rem;
+}
+
+.search-bar button:hover {
+  background-color: #009fdd;
+}
+
+
+
+
+
+
+
+/* ===== Footer ===== */
+.tn-footer{
+  margin-top: 80px;
+  background:#0f0f0f;
+  border-top:1px solid rgba(0,191,255,0.12);
+  box-shadow: 0 -10px 40px rgba(0,191,255,0.07) inset;
+}
+.tn-footer__grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  gap:28px;
+  padding:40px 22px;
+  max-width:1200px; margin:0 auto;
+}
+.tn-col h4{ color:#00bfff; margin:0 0 12px; }
+.tn-muted{ color:#aaa; margin:10px 0 16px; }
+.tn-social a{ color:#fff; margin-right:10px; font-size:1.1rem; transition:.2s }
+.tn-social a:hover{ color:#00bfff; }
+.tn-links, .tn-contact{ list-style:none; margin:0; padding:0; }
+.tn-links li{ margin:8px 0; }
+.tn-links a{ color:#ddd; text-decoration:none; transition:.2s }
+.tn-links a:hover{ color:#00bfff; }
+.tn-contact li{ color:#ddd; margin:8px 0; }
+.tn-contact i{ color:#00bfff; margin-right:8px; }
+.tn-copy{
+  text-align:center; color:#888; border-top:1px solid rgba(255,255,255,.06);
+  padding:14px 10px; font-size:.9rem;
+}
+
+
+
