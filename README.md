@@ -50,6 +50,7 @@ This project was fully coded and designed by **Sara Aljreba**, covering both fro
 ---
 
 ## 📂 Folder Structure
+
 TechNest/
 │
 ├── backend/
