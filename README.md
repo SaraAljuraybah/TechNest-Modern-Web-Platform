@@ -78,7 +78,8 @@ This project was fully coded and designed by **Sara Aljreba**, covering both fro
 
 ---
 
-🎥 **Demo Video:** [Watch on Google Drive]([https://drive.google.com/yourlink](https://drive.google.com/file/d/134MzcOBZip_WV8GQ255LXTmtFEGkg4wl/view?usp=drive_link))
+## 🎥 Demo Video  
+[▶️ Watch full demo](https://drive.google.com/file/d/134MzcOBZip_WV8GQ255LXTmtFEGkg4wl/view?usp=share_link)
 
 ---
 
