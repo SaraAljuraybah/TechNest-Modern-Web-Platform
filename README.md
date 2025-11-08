@@ -51,33 +51,31 @@ This project was fully coded and designed by **Sara Aljreba**, covering both fro
 
 ## 📂 Folder Structure
 
-TechNest/
-│
-├── backend/
-│   ├── db.php               # Database connection
-│   ├── signup.php           # Handles user registration
-│   └── login.php            # Handles user login + session
-│
-├── frontend/
-│   ├── index.html           # Homepage after login
-│   ├── login.html           # Login page
-│   ├── signup.html          # Signup page
-│   ├── contact.html         # Contact section
-│   └── assets/
-│       ├── css/
-│       │   ├── style.css
-│       │   ├── login.css
-│       │   └── signup.css
-│       ├── js/
-│       │   ├── login.js
-│       │   └── signup.js
-│       └── img/
-│           └── logo.png
-│
-├── database/
-│   └── technest_db.sql      # Database export file
-│
-└── README.md
+| Path | Description |
+|------|--------------|
+| **backend/** | Server-side PHP files |
+| ├── `db.php` | Database connection configuration |
+| ├── `signup.php` | Handles user registration |
+| └── `login.php` | Handles user login and session creation |
+| **frontend/** | All front-end pages and assets |
+| ├── `index.html` | Homepage shown after login |
+| ├── `login.html` | Login page |
+| ├── `signup.html` | Signup page |
+| ├── `contact.html` | Contact section |
+| └── **assets/** | Website resources |
+| &nbsp;&nbsp;&nbsp;&nbsp;├── **css/** | Styling files |
+| &nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;├── `style.css` — Global styles |
+| &nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;├── `login.css` — Login page styles |
+| &nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;└── `signup.css` — Signup page styles |
+| &nbsp;&nbsp;&nbsp;&nbsp;├── **js/** | JavaScript scripts |
+| &nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;├── `login.js` — Handles login form logic |
+| &nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;└── `signup.js` — Handles signup form logic |
+| &nbsp;&nbsp;&nbsp;&nbsp;└── **img/** | Images and logos |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── `logo.png` |
+| **database/** | Database export and schema |
+| └── `technest_db.sql` | MySQL database export file |
+| **README.md** | Project documentation file |
+
 
 
 
