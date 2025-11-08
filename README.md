@@ -28,3 +28,31 @@ TechNest focuses on **user authentication**, smooth UI/UX, and a modular file st
 ---
 
 ## 🗂 Folder Structure
+TechNest/
+│
+├── backend/
+│   ├── db.php
+│   ├── signup.php
+│   ├── login.php
+│
+├── frontend/
+│   ├── index.html
+│   ├── login.html
+│   ├── signup.html
+│   ├── contact.html
+│   ├── assets/
+│       ├── css/
+│       │   ├── style.css
+│       │   ├── login.css
+│       │   ├── signup.css
+│       ├── js/
+│       │   ├── login.js
+│       │   ├── signup.js
+│       └── img/
+│           └── logo.png
+│
+├── database/
+│   └── technest_db.sql    ← انسخي قاعدة البيانات من phpMyAdmin
+│
+└── README.md
+
