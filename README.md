@@ -49,34 +49,8 @@ This project was fully coded and designed by **Sara Aljreba**, covering both fro
 
 ---
 
-## 🗂 Folder Structure
-TechNest/
-│
-├── backend/
-│   ├── db.php               # Database connection
-│   ├── signup.php           # Handles user registration
-│   └── login.php            # Handles user login + session
-│
-├── frontend/
-│   ├── index.html           # Homepage after login
-│   ├── login.html           # Login page
-│   ├── signup.html          # Signup page
-│   ├── contact.html         # Contact section
-│   └── assets/
-│       ├── css/
-│       │   ├── style.css
-│       │   ├── login.css
-│       │   └── signup.css
-│       ├── js/
-│       │   ├── login.js
-│       │   └── signup.js
-│       └── img/
-│           └── logo.png
-│
-├── database/
-│   └── technest_db.sql      # Database export file
-│
-└── README.md
+## 📂 Folder Structure
+<pre> TechNest/ │ ├── backend/ │ ├── db.php # Database connection │ ├── signup.php # Handles user registration │ └── login.php # Handles user login + session │ ├── frontend/ │ ├── index.html # Homepage after login │ ├── login.html # Login page │ ├── signup.html # Signup page │ ├── contact.html # Contact section │ └── assets/ │ ├── css/ │ │ ├── style.css │ │ ├── login.css │ │ └── signup.css │ ├── js/ │ │ ├── login.js │ │ └── signup.js │ └── img/ │ └── logo.png │ ├── database/ │ └── technest_db.sql # Database export file │ └── README.md </pre>
 
 
 👩‍💻 About the Developer
