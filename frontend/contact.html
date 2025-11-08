@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | TechNest</title>
+  <link rel="stylesheet" href="assets/css/contact.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="assets/images/logo.png" alt="TechNest Logo" />
+        <span>TechNest</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#products">Products</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="contact-section">
+    <h1>Contact Me</h1>
+    <p class="subtitle">
+      Let’s connect — feel free to reach out through any of the following platforms.
+    </p>
+
+    <div class="contact-container">
+      <div class="contact-card">
+        <i class="fa-brands fa-github"></i>
+        <h3>GitHub</h3>
+        <a href="https://github.com/SaraAljuraybah" target="_blank">@SaraAljuraybah</a>
+      </div>
+
+      <div class="contact-card">
+        <i class="fa-brands fa-linkedin"></i>
+        <h3>LinkedIn</h3>
+        <a href="http://linkedin.com/in/sara-aljuraybah-aa746227a" target="_blank">SaraAljuraybah</a>
+      </div>
+
+      <div class="contact-card">
+        <i class="fa-brands fa-x-twitter"></i>
+        <h3>X</h3>
+        <a href="https://x.com/TShlwn" target="_blank">@TShlwn</a>
+      </div>
+
+      <div class="contact-card">
+        <i class="fa-solid fa-envelope"></i>
+        <h3>Email</h3>
+        <p>Saraaljrebah1@gmail.com</p>
+      </div>
+
+      <div class="contact-card">
+        <i class="fa-solid fa-phone"></i>
+        <h3>Phone</h3>
+        <p>+966 55 000 0000</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="tn-footer">
+    <div class="tn-copy">
+      © <span id="year"></span> TechNest — All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

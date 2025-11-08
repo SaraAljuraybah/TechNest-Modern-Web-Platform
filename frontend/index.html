@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechNest | Smart Gadgets Store</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="TechNest Logo" class="logo-img">
+                <span>TechNest</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#products" class="nav-products">Products</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="#" class="cart-link">🛒 <span class="cart-count">0</span></a></li>
+            </ul>
+        </nav>
+        <!-- 🔍 Search bar here -->
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search products...">
+            <button id="searchBtn"><i class="fas fa-search"></i></button>
+        </div>
+    </header>
+
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Next-Gen Tech for Smart Living</h1>
+        <p>Explore the latest smart gadgets designed to upgrade your everyday life.</p>
+        <button class="shop-btn" onclick="document.getElementById('products').scrollIntoView({ behavior: 'smooth' });">
+            Shop Now
+        </button>
+    </section>
+
+
+
+    <!-- Featured Products Section -->
+    <section class="featured-products" id="products">
+        <h2>Featured Products</h2>
+
+        <!--  Products 1 -->
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="assets/images/p4.png" alt="Headphones">
+                <h3>name of the product</h3>
+                <p>description</p>
+                <span class="price">price$</span>
+                <button class="add-btn">Add to cart</button>
+            </div>
+
+            <!--  Products 2 -->
+            <div class="product-card">
+                <img src="assets/images/p4.png" alt="Headphones">
+                <h3>name of the product</h3>
+                <p>description</p>
+                <span class="price">price$</span>
+                <button class="add-btn">Add to cart</button>
+            </div>
+
+            <!--  Products 3 -->
+            <div class="product-card">
+                <img src="assets/images/p4.png" alt="Headphones">
+                <h3>name of the product</h3>
+                <p>description</p>
+                <span class="price">price$</span>
+                <button class="add-btn">Add to cart</button>
+            </div>
+
+            <!--  Products 4 -->
+            <div class="product-card">
+                <img src="assets/images/p4.png" alt="Headphones">
+                <h3>name of the product</h3>
+                <p>description</p>
+                <span class="price">price$</span>
+                <button class="add-btn">Add to cart</button>
+            </div>
+        </div>
+    </section> <!-- end of Featured Products Section -->
+
+
+    <!-- 🛒 Sidebar Cart -->
+    <div id="cartSidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button class="close-cart">&times;</button>
+        </div>
+
+        <!-- هنا تنضاف المنتجات ديناميكياً -->
+        <div class="cart-items"></div>
+
+        <div class="cart-footer">
+            <p>Total: <span class="total-price">0</span> SAR</p>
+            <button class="checkout-btn"><a href="checkout.html">Checkout </a></button>
+        </div>
+    </div>
+
+
+
+
+
+
+    <footer class="tn-footer">
+        <div class="tn-footer__grid">
+            <!-- Brand -->
+            <div class="tn-col">
+                <div class="logo">
+                    <img src="assets/images/logo.png" alt="TechNest" />
+                    <span>TechNest</span>
+                </div>
+                <p class="tn-muted">Next-gen tech for smart living.</p>
+                <div class="tn-social">
+                    <a href="https://github.com/SaraAljuraybah" target="_blank" aria-label="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="http://linkedin.com/in/sara-aljuraybah-aa746227a" target="_blank" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://x.com/TShlwn" target="_blank" aria-label="X">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="tn-col">
+                <h4>Quick Links</h4>
+                <ul class="tn-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact -->
+            <div class="tn-col">
+                <h4>Contact</h4>
+                <ul class="tn-contact">
+                    <li><i class="fas fa-envelope"></i> Saraaljrebah1@gmail.com</li>
+                    <li><i class="fas fa-phone"></i> +966 55 000 0000</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Riyadh, Saudi Arabia</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="tn-copy">
+            © <span id="tn-year"></span> TechNest — All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('tn-year').textContent = new Date().getFullYear();
+        function tnThank() {
+            const m = document.getElementById('tn-news-msg');
+            m.classList.remove('tn-hidden'); setTimeout(() => m.classList.add('tn-hidden'), 2500);
+        }
+    </script>
+
+
+
+
+
+
+
+    <script src="assets/js/main.js"></script>
+    <script>
+        // 🌟 Smooth scroll to products section
+        document.querySelector('.nav-products').addEventListener('click', function (e) {
+            e.preventDefault();
+            document.getElementById('products').scrollIntoView({ behavior: 'smooth' });
+        });
+
+    </script>
+
+</body>
+
+</html>
